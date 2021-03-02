@@ -1,4 +1,4 @@
-module github.com/maxatome/vitotrol2influx
+module github.com/b4dboi/vitotrol2influx
 
 go 1.13
 
