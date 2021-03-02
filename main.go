@@ -63,7 +63,7 @@ func handleDevices(conf *Config, pVitotrol *vitotrol.Session, influx client.Clie
 	for _, vdev := range pVitotrol.Devices {
 		start := time.Now()
                 fmt.Printf("%s Device %s %s\n",
-			now.Format(time.RFC3339),
+			start.Format(time.RFC3339),
 			vdev.DeviceName, 
 			vdev.LocationName,
 		)
