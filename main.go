@@ -65,7 +65,7 @@ func handleDevices(conf *Config, pVitotrol *vitotrol.Session, influx client.Clie
                 fmt.Printf("%s Device %s %s\n",
 			now.Format(time.RFC3339),
 			vdev.DeviceName, 
-			vdev.LocationName
+			vdev.LocationName,
 		)
 		if !vdev.IsConnected {
 			fmt.Fprintf(os.Stderr, "Device not connected\n")
