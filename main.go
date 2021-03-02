@@ -141,9 +141,10 @@ func handleDevices(conf *Config, pVitotrol *vitotrol.Session, influx client.Clie
 
 		bp.AddPoint(point)
 
-		fmt.Printf("%s %s → writing batch...\n",
+		fmt.Printf("%s %s → writing batch for %s...\n",
 			now.Format(time.RFC3339),
 			now.Sub(start).Truncate(time.Millisecond),
+                        vdev.LocationName,
 		)
 
 		// Write the batch
